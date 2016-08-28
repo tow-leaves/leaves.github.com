@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气预报</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.content{
+			margin: 0 auto;
+			padding: 0;
+			width: 800px;
+			text-align: center;
+		}
+		h1{
+			color: #f39011;
+		}
+		h3{
+			color: #6f6f6f;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			showTime();
+		}
+		function checkTime(i){
+			if(i<10){
+				i="0"+i;
+			}
+			return i;
+		}
+		function showTime(){
+			var myDate=new Date();
+			var year=myDate.getFullYear();
+			var month=myDate.getMonth()+1;
+			var date=myDate.getDate();
+			var d=myDate.getDay();
+			var h=myDate.getHours();
+			var m=myDate.getMinutes();
+			var s=myDate.getSeconds();
+			m=checkTime(m);
+			s=checkTime(s);
+			var weekday=new Array(7)
+			weekday[0]="星期日";
+			weekday[1]="星期一";
+			weekday[2]="星期二";
+			weekday[3]="星期三";
+			weekday[4]="星期四";
+			weekday[5]="星期五";
+			weekday[6]="星期六";
+			document.getElementById('times').innerHTML=year+"年"+month+"月"+date+"日"+weekday[d]+h+":"+m+":"+s;
+			setTimeout(showTime, 500);
+		}
+	</script>
+</head>
+<body>
+	<div class="content">
+		<div class="head">
+			<h1>天气预报</h1>
+			<p id="times"></p>
+		</div>
+		<div class="center">
+			<hr>
+			<h3>今天天气</h3>
+			<p>湿度：</p>
+			<p>穿衣指数：</p>
+			<p>洗车指数：</p>
+			<p>旅行指数：</p>
+			<p>锻炼指数：</p>
+			<p>紫外线指数：</p>
+			<hr>
+		</div>
+		<div>
+			<h3>未来6天天气</h3>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组去重</title>
+	<script type="text/javascript">
+		function qc(arr){
+			var n={},
+			r=[];
+			for(var i=0;i<arr.length;i++){
+				if(n[arr[i]]==null){
+				n[arr[i]]=true;
+				r.push(arr[i]);
+				}
+			}
+			return r;
+		}
+		var arr=[2,3,4,2,4,5,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3];
+		var n1=qc(arr);
+		document.write('原始数组:'+arr+'<br>');
+		document.write('去重后:'+n1+'<br>');
+	</script>
+</head>
+<body>
+</body>
+</html>
