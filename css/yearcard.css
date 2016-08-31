@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.calendar{
+	margin: 50px auto;
+	padding: 10px;
+	background-color: #e9e7e7;
+	width:328px;
+}
+ul{
+	margin: 0 auto;
+	padding: 10px;
+	list-style: none;
+	width: 288px;
+	overflow: hidden;
+}
+ul li{
+	margin: 8px;
+	padding-top: 14px;
+	float: left;
+	width: 78px;
+	height: 64px;
+	color: #fff;
+	background-color: #000;
+	border: 1px solid #000;
+	text-align: center;
+}
+ul li:hover{
+	color: #ef286e;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+h2,p{
+	margin: 0;
+}
+h4{
+	margin: 0 0 10px 0;
+}
+.text{
+	margin: 0 auto 20px auto;
+	padding: 10px;
+	border: 1px solid #fff;
+	width: 252px;
+	color: #5c5c5c;
+	background-color: #fcfcfc;
+}
