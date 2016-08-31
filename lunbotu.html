@@ -48,46 +48,6 @@
     	}
  	</style>
  	<script type="text/javascript">
- 		/*window.onload=function(){
- 			var wrap=document.getElementById('wrap'),
- 			pic=document.getElementById('pic').getElementsByTagName('li'),
- 			list=document.getElementById('list').getElementsByTagName('li'),
- 			index=0,
- 			timer=null;
- 			//定义自动循环播放
- 			timer=setInterval(autoPlay, 2000);
- 			//当鼠标移动到图片上停止播放
- 			wrap.onmouseover=function(){
- 				clearInterval(timer);
- 			}
- 			//当鼠标移出图片继续循环播放
- 			wrap.onmouseout=function(){
- 				timer=setInterval(autoPlay, 2000);
- 			}
- 			//定义当鼠标放在数字上图片切换到对应图片
- 			for (var i=0; i<list.length; i++) {
- 				list[i].onmouseover=function(){
- 					clearInterval(timer);
- 					index=this.innerText-1;
- 					changePic(index);
- 				};
- 			};
- 			function autoPlay(){
- 				if(++index>=pic.length){
- 					index=0;
- 				}
- 				changePic(index);
- 			}
- 			//定义图片轮播函数
- 			function changePic(curIndex){
- 				for(var i=0; i<pic.length; i++){
- 					pic[i].style.display="none";
- 					list[i].className="";
- 				}
- 				pic[curIndex].style.display="block";
- 				list[curIndex].className="on";
- 			}
- 		};*/
         window.onload = function(){
             var wrap=document.getElementById("wrap"),
             pic=document.getElementById("pic").getElementsByTagName("li"),
